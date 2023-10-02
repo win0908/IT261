@@ -1,2 +1,2 @@
-# IT261
-IT261 Web App Programming
+# it261
+it261 Web_App_Programming
