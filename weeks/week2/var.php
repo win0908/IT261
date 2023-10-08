@@ -1,5 +1,5 @@
 <?php
-echo '<a href="http://www.win0908.me/it261/index.php"> Home </a><br>';
+echo '<a href="http://www.win0908.me/it261/website/index.php"> Home </a><br>';
 echo '<a href="https://github.com/win0908/it261/blob/main/weeks/week2/var.php"> Code </a><br>';
 
 // my variables
