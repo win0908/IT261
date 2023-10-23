@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 
 <html>
@@ -54,25 +52,7 @@
         justify-content: flex-start;
         
     }
-    #container_weeks23 {
-        flex: 0 0 auto;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 32px;
-        flex-direction: column;
-    }
-    #container_weeks45 {
-        flex: 0 0 auto;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-        margin-left: 32px;
-        flex-direction: column;
-    }
-    #container_weeks67 {
+    #container_link1, #container_link2, #container_link3 {
         flex: 0 0 auto;
         width: auto;
         height: auto;
@@ -111,8 +91,8 @@
         border-radius: 10px;
         border-color: #F1F1F1;
     }
-    <?php include '/home/dh_yehew8/win0908.me/it261/css/header_css.css';?>
-    <?php include '/home/dh_yehew8/win0908.me/it261/css/footer_css.css';?> 
+    <?php include 'css/header_css.css';?>
+    <?php include 'css/footer_css.css';?> 
     </style>
     
     
@@ -132,6 +112,7 @@
 
     <!-- Header -->
     <?php include '/home/dh_yehew8/win0908.me/it261/header.php';?>
+    
    
     <div id="bodycontainer">
         
@@ -151,7 +132,7 @@
                 <br>
             </span>
             <div id="container_weeks">
-                <div id="container_weeks23">
+                <div id="container_link1">
                         
                     <h1>&raquo; Week2</h1>
                     <a href="http://www.win0908.me/it261/weeks/week2/var.php"> var.php   </a>
@@ -168,13 +149,21 @@
                     <a href="http://www.win0908.me/it261/weeks/week3/switch.php"> switch.php </a>
 
                 </div>
-                <div id="container_weeks45">
+                <div id="container_link2">
     
                     <h1>&raquo; Week4</h1>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/adder.php">           adder.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/arithmetic-form.php"> arithmetic-form </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/celcius.php"> celcius.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form-get.php"> form-get.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form1.php"> form1.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form2.php"> form2.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form3.php"> form3.php </a>
+
+                    
+
+                </div>
+                <div id="container_link3">
 
                     <h1>&raquo; Week5</h1>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
@@ -182,9 +171,6 @@
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
 
-                </div>
-                <div id="container_weeks67">
-    
                     <h1>&raquo; Week6</h1>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
@@ -222,8 +208,8 @@
 <!-- footer -->
 <?php include '/home/dh_yehew8/win0908.me/it261/footer.php';?>
 
+
 </footer>
 </body>
 </html>
-
 
