@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -52,7 +51,7 @@
         justify-content: flex-start;
         
     }
-    #container_link1, #container_link2, #container_link3 {
+    #container_link1, #container_link2, #container_link3, #container_link4 {
         flex: 0 0 auto;
         width: auto;
         height: auto;
@@ -91,6 +90,13 @@
         border-radius: 10px;
         border-color: #F1F1F1;
     }
+    #iframe {
+        width: 50vw;
+        height: 100vh;
+        align-self: flex-start;
+        border : none;
+    }
+
     <?php include 'css/header_css.css';?>
     <?php include 'css/footer_css.css';?> 
     </style>
@@ -119,9 +125,13 @@
         <!--
         <img src="https://images.unsplash.com/photo-1696801946020-ebc638477c5d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8YWxsfDQ0fHx8fHx8Mnx8MTY5NzQzMjAxNXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=800" alt="image" id="weeks_img" />
         -->
+        <!--
         <div id="p5">
-        <script src="mySketch.js"></script>
+        <script src="sketch.js"></script>
         </div>
+        -->
+
+        <iframe src="https://my.spline.design/glassdonut-13b9a1ca2029af6042aa0be31e2ccf46/" id="iframe"> </iframe>
         
         <div id="bodytextcontainer">
             
@@ -135,18 +145,18 @@
                 <div id="container_link1">
                         
                     <h1>&raquo; Week2</h1>
-                    <a href="http://www.win0908.me/it261/weeks/week2/var.php"> var.php   </a>
-                    <a href="http://www.win0908.me/it261/weeks/week2/var2.php"> var2.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week2/currency.php"> currency.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week2/var.php">            var.php   </a>
+                    <a href="http://www.win0908.me/it261/weeks/week2/var2.php">           var2.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week2/currency.php">       currency.php </a>
                     <a href="http://www.win0908.me/it261/weeks/week2/currency-logic.php"> currency-logic.php </a>
 
                     <h1>&raquo; Week3</h1>
-                    <a href="http://www.win0908.me/it261/weeks/week3/about.php"> about.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week3/date.php"> date.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week3/about.php">    about.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week3/date.php">     date.php </a>
                     <a href="http://www.win0908.me/it261/weeks/week3/for-each.php"> for-each.php </a>
                     <a href="http://www.win0908.me/it261/weeks/week3/for-loop.php"> for-loop.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week3/if.php"> if.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week3/switch.php"> switch.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week3/if.php">       if.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week3/switch.php">   switch.php </a>
 
                 </div>
                 <div id="container_link2">
@@ -154,11 +164,11 @@
                     <h1>&raquo; Week4</h1>
                     <a href="http://www.win0908.me/it261/weeks/week4/adder.php">           adder.php </a>
                     <a href="http://www.win0908.me/it261/weeks/week4/arithmetic-form.php"> arithmetic-form </a>
-                    <a href="http://www.win0908.me/it261/weeks/week4/celcius.php"> celcius.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week4/form-get.php"> form-get.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week4/form1.php"> form1.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week4/form2.php"> form2.php </a>
-                    <a href="http://www.win0908.me/it261/weeks/week4/form3.php"> form3.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/celcius.php">         celcius.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form-get.php">        form-get.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form1.php">           form1.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form2.php">           form2.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week4/form3.php">           form3.php </a>
 
                     
 
@@ -166,10 +176,15 @@
                 <div id="container_link3">
 
                     <h1>&raquo; Week5</h1>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/currency1.php">  currency1.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/currency2.php">  currency2.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/currency3.php">  currency3.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/currency4.php">  currency4.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/null.php">       null.php</a>
+                    <a href="http://www.win0908.me/it261/weeks/week5/calculator.php"> calculator.php </a>
+
+                </div>
+                <div id="container_link4">
 
                     <h1>&raquo; Week6</h1>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
@@ -184,6 +199,7 @@
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
 
                 </div>
+
             </div>
         </div>
         
@@ -212,4 +228,5 @@
 </footer>
 </body>
 </html>
+
 
