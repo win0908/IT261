@@ -101,13 +101,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 echo '
                 <div class="box">
                 <h2> I am REALLY happy,<br> because I have $'.number_format($dollars,2).' dollars! </h2>
-                <iframe width="400" src="https://www.youtube.com/watch?v=O5APc0z49wg"> </iframe>
+                <iframe width="400" src="https://www.youtube.com/embed/O5APc0z49wg" frameborder="0" allowfullscreen></iframe>
                 ';
             } else {
                 echo '
                 <div class="box">
                 <h2>I am NOT happy,<br> because I have $'.number_format($dollars,2).' dollars!</h2>
-                <iframe width="400" src="https://www.youtube.com/watch?v=l5aZJBLAu1E"> </iframe>
+                <iframe width="400" src="https://www.youtube.com/embed/l5aZJBLAu1E" frameborder="0" allowfullscreen></iframe>
                 ';
             }
         }
