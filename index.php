@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -187,10 +188,10 @@
                 <div id="container_link4">
 
                     <h1>&raquo; Week6</h1>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
+                    <a href="http://www.win0908.me/it261/weeks/week6/form.php"> form.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week6/form2.php"> form2.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week6/functions.php"> functions.php </a>
+                    
 
                     <h1>&raquo; Week7</h1>
                     <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
@@ -228,5 +229,6 @@
 </footer>
 </body>
 </html>
+
 
 
