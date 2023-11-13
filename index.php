@@ -194,10 +194,10 @@
                     
 
                     <h1>&raquo; Week7</h1>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
-                    <a href="https://example.com" target="_blank" rel="noreferrer noopener"> ... </a>
+                    <a href="http://www.win0908.me/it261/weeks/week7/form3.php">    form3.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week7/pictures.php"> pictures.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week7/rand.php">     rand.php </a>
+                    <a href="http://www.win0908.me/it261/weeks/week7/strings.php">  strings.php </a>
 
                 </div>
 
