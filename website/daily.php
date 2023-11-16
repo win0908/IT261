@@ -1,3 +1,69 @@
+<?php
+
+date_default_timezone_set('America/Los_Angeles');
+
+if(isset($_GET['today'])){
+    $today = $_GET['today'];
+} else {
+    $today = date('l');
+}
+
+switch ($today) {
+    case "Monday":
+        $today_is = "<h2>Today is Monday!</h2>";
+        $color_of_the_day = "#FFDE57";
+        $pic = 'BobRoss1.png';
+        $alt = 'Bob Ross';
+        $quote = '<p> “You can do anything here — the only prerequisite is that it makes you happy.” <b> - Bob Ross - </b> </p>';
+        break;
+    case "Tuesday":
+        $today_is = "<h2>Today is Tuesday!</h2>";
+        $color_of_the_day = "#FF57A1";
+        $pic = 'MartinLutherKingJr.png';
+        $alt = 'Martin Luther King Jr';
+        $quote = '<p> "I have a dream that one day this nation will rise up and live out the true meaning of its creed. 
+        We hold these truths to be self-evident that all men are created equal." <b> - Martin Luther King Jr. - </b> </p>';
+        break;
+    case "Wednesday":
+        $today_is = "<h2>Today is Wednesday!</h2>";
+        $color_of_the_day = "#97FF57";
+        $pic = 'WaltDisney.png';
+        $alt = 'Walt Disney';
+        $quote = '<p> "If you can dream it, you can do it." <b> - Walt Disney - </b> </p>';
+        break;
+    case "Thursday":
+        $today_is = "<h2>Today is Thursday!</h2>";
+        $color_of_the_day = "#FF8557";
+        $pic = 'SteveJobs.png';
+        $alt = 'Steve Jobs';
+        $quote = '<p> "The most important thing is to enjoy your life - to be happy - it\'s all that matters." <b> - Steve Jobs - </b> </p>';
+        break;
+    case "Friday":
+        $today_is = "<h2>Today is Friday!</h2>";
+        $color_of_the_day = "#57BAFF";
+        $pic = 'StanLee.png';
+        $alt = 'Stan Lee';
+        $quote = '<p> "I\'m not a self-made man. I\'ve had a lot of help." <b> - Stan Lee - </b> </p>';
+        break; 
+    case "Saturday":
+        $today_is = "<h2>Today is Saturday!</h2>";
+        $color_of_the_day = "#9957FF";
+        $pic = 'LadyGaga.png';
+        $alt = 'Lady Gaga';
+        $quote = '<p> “I\'m not here to be perfect, I\'m here to be real." <b> - Lady Gaga - </b> </p>';
+        break; 
+    case "Sunday":
+        $today_is = "<h2>Today is Sunday!</h2>";
+        $color_of_the_day = "#FF5757";
+        $pic = 'BobRoss2.png';
+        $alt = 'Bob Ross';
+        $quote = '<p> "The way to get started is to quit talking and begin doing." <b> - Walt Disney - </b> </p>';
+        break;  
+    
+    };
+?>
+
+
 
 
 <!DOCTYPE html>
@@ -5,7 +71,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Friday </title>
+    <title> <?php echo $today; ?> </title>
 
     <style>
     * {
@@ -13,20 +79,20 @@
         margin: 0;
         box-sizing: border-box;
     }
-    #container {
+    .container {
         width: 100%;
         display: flex;
         overflow: auto;
-        min-height: auto;
+        min-height: 85vh;
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
     }
-    #wrapper {
-        width: 940px;
-        margin: 20px auto;
+    .wrapper {
+        width: auto;
+        margin: 0px auto;
     }
-    #img {
+    .img {
         width: 500px;
         height: 500px;
         object-fit: cover;
@@ -34,109 +100,32 @@
     p {
         font-size: 25px;
     }
-    
-        a { 
+    a {
+        color: #0f0f0f;
         text-decoration: none;
-        color: #57A1FF;
-        font-size: 24px;
     }
-    #container_header {
-        width: 100%;
-        display: flex;
-        overflow: auto;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    #header {
-        flex: 0 0 auto;
-        width: 90%;
-        height: 144px;
-        margin: 00px;
-        display: flex;
-        align-self: center;
-        margin-top: 0px;
-        align-items: center;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        justify-content: space-between;
-    }
-    #header_text {
-        font-size: 84px;
-    }
-    #container_header_link {
-        flex: 0 0 auto;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: flex-start;
-    }
-    #container_header_link1 {
-        flex: 0 0 auto;
-        width: 96px;
-        height: auto;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-    #container_header_link2 {
-        flex: 0 0 auto;
-        width: 96px;
-        height: auto;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-    }        #footer {
-        flex: 0 0 auto;
-        width: 100%;
-        height: 96px;
-        display: flex;
-        position: relative;
-        align-items: center;
-        margin-top: 24px;
-        margin-bottom: 32px;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        font-size: 16px;
-        white-space: pre;
-        font-family: monospace;
-    }
-    #footer_name {
-        align-self: center;
-    }
+    
+    <?php include '/home/dh_yehew8/win0908.me/it261/css/header.css';?>
+    <?php include '/home/dh_yehew8/win0908.me/it261/css/footer.css';?>
     
     </style>
     
     
 
 </head>
-<body bgcolor=#57BAFF>
-<div id="container">
-    
-
-        <div id="header">
-            <a href="http://www.win0908.me/it261">  <h1 id="header_text"> Win0908 </h1>   </a> 
-            <div id="container_header_link">
-                <div id="container_header_link1">
-                    <a href="http://www.win0908.me/it261/website/about.php">   About   </a>
-                    <a href="http://www.win0908.me/it261/website/contact.php"> Contact </a>
-                    <a href="http://www.win0908.me/it261/website/daily.php">   Daily   </a>
-                </div>
-                <div id="container_header_link2"> <!-- id="container_head_link" -->
-                    <a href="http://www.win0908.me/it261/website/gallery.php"> Gallery </a>
-                    <a href="http://www.win0908.me/it261/website/project.php"> Project </a>
-                    <a href="https://github.com/win0908/it261/tree/main"> GitHub </a>
-                </div>
-            </div>
-        </div>
-   
-    <div id="wrapper">
+<body bgcolor=<?php echo $color_of_the_day ?>>
+<div class="container">
+    <?php include '/home/dh_yehew8/win0908.me/it261/header.php';?>
+    <div class="wrapper">
         <h1> Quote of the Day !!! </h1>
         
-        <img src="/it261/images/StanLee.png"  alt="Stan Lee" id="img"/>
-        <p> "I'm not a self-made man. I've had a lot of help." <b> - Stan Lee - </b> </p>        
+        <img src="/it261/images/<?php echo $pic ?>"  alt="<?php echo $alt ?>" class="img"/>
+        <?php 
+        
+        echo $quote 
+        
+        ?>
+        
         <br>
         <br>
         <br>
@@ -158,14 +147,7 @@
 
 <!--  footer  -->
 <footer>
-    
-
-<div id="footer">
-    <span id="footer_name"> Web Design By Supawin Soongsawang </span>
-    <span> 
-        Copyright &copy;2022  All Rights Reserved, <a href="https://validator.w3.org/nu/?doc=http://www.win0908.me/it261/index.php">HTML Validation</a> <a href="https://jigsaw.w3.org/css-validator/validator?uri=http://www.win0908.me/it261/index.php"> CSS Validation</a>
-    </span>
-</div>
+    <?php include '/home/dh_yehew8/win0908.me/it261/footer.php';?>
 </footer>
 
 </body>
