@@ -1,0 +1,129 @@
+    
+  .body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1698609552233-12df35c55ecc?ixid=M3w5MTMyMXwwfDF8YWxsfDQ1NHx8fHx8fDJ8fDE2OTk5MzE5NDN8&ixlib=rb-4.0.3&w=1500');
+  }  
+  a {
+    color: #0f0f0f;
+    text-decoration: none;
+  }
+  
+
+
+  /* Main   */
+  .main {
+    flex: 0 0 auto;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  /* Main-left */
+  .main-l {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-img {
+    width: 95%;
+    height: 45%;
+    box-shadow: 5px 5px 10px 0px rgba(89, 89, 89, 0.6);
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .mamp-text {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .mamp-img {
+    gap: 0;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mamp1 {
+    width: 47.5%;
+    height: 100%;
+    align-self: flex-start;
+    box-shadow: 5px 5px 10px 0px rgba(89, 89, 89, 0.6);
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .mamp2 {
+    width: 47.5%;
+    height: 100%;
+    align-self: flex-start;
+    box-shadow: 5px 5px 10px 0px rgba(89, 89, 89, 0.6);
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+
+  /* Main-right */
+  .main-r {
+    flex: 0 0 auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .bio {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .weeks {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .weeks-l {
+    gap: 2.5vh;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2.5vw;
+    margin-right: 5vw;
+    flex-direction: column;
+  }
+  .weeks-r {
+    gap: 2.5vh;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .week {
+    flex: 0 0 auto;
+    width: auto;
+    height: 175px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
