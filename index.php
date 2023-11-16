@@ -19,7 +19,6 @@
 
 <!--  Header -->
 <?php include '/home/dh_yehew8/win0908.me/it261/header.php';?>
-<?php include 'header.php';?>
 
 
 
@@ -114,7 +113,6 @@
 
 <!--  Footer -->
 <?php include '/home/dh_yehew8/win0908.me/it261/footer.php';?>
-<?php include 'footer.php';?>
 
 
 </body>
