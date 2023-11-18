@@ -122,7 +122,7 @@ $_POST['gender'],
 $_POST['comments'],
 $_POST['privacy'])) {
 
-    $to = '@gamil.com';
+    $to = '@mystudentswa.com';
     $subject = 'Test email on  '.date('m/d/y, h i A');
     $body = '
     First Name:  '.$first_name.'      '.PHP_EOL.'
@@ -166,58 +166,42 @@ $_POST['privacy'])) {
 } //closing server request method
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contact </title>
-    
+    <title>Document</title>
+
     <style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background: beige;
-    }
-
+        <?php include '/home/dh_yehew8/win0908.me/it261/css/index.css';?>
+        <?php include '/home/dh_yehew8/win0908.me/it261/css/header.css';?> 
+        <?php include '/home/dh_yehew8/win0908.me/it261/css/footer.css';?> 
+    
     form {
-        width: 500px;
-        margin: 30px auto;
+        width: 80%;
     }
-
     fieldset {
         padding: 10px;
     }
-
     label {
-        display: block;
         margin-bottom: 5px;
         font-weight: bold;
     }
-
     input[type=text],
     input[type=email],
     input[type=tel] {
-        width: 100%;
+        width: 20%;
         margin-bottom: 10px;
     }
-
     span {
-        display: block;
         color: red;
         font-style: italic;
         margin-bottom: 10px;
     }
-
     select{
         margin-bottom: 10px;
     }
-
     textarea {
         width: 100%;
         height: 80px;
@@ -230,28 +214,39 @@ $_POST['privacy'])) {
         margin-bottom: 10px;
         margin-left: 5px;
     }
-
-    h1 {
-        text-align: center;
-        margin-top: 20px;
-    }
-        
     </style>
 
+
 </head>
-<body>
+
+<body class="body">
+
+<!--  Header -->
+<?php include '/home/dh_yehew8/win0908.me/it261/header.php';?>
 
 
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-    <h1> Contact </h1>
-<fieldset>
+<!--  Main -->
+<div class="main">
+    
+    <!--  Main_Left  -->
+    <div class="main-l">
+        <h1>Welcome to my contact page! </h1>
+        <!-- <span> Game </span> -->
+    </div>
+
+
+
+    <!--  Main_Right -->
+    <div class="main-r">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+    <fieldset>
     <legend> Contact Supawin </legend>
     
     <label> First Name </label>
     <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name']); ?>" >
     <span><?php echo $first_name_err; ?></span>
-
+    
     <label> Last Name </label>
     <input type="text" name="last_name" value="<?php if(isset($_POST['last_name'])) echo htmlspecialchars($_POST['last_name']); ?>" >
     <span><?php echo $last_name_err; ?></span>
@@ -269,7 +264,7 @@ $_POST['privacy'])) {
     </ul>
     <span><?php echo $gender_err; ?></span>
 
-    
+        
     <label> Phone </label>
     <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']); ?>" >
     <span><?php echo $phone_err; ?></span>
@@ -284,7 +279,7 @@ $_POST['privacy'])) {
         <li><input type="checkbox" name="games[]" value="GTA V"     <?php if(isset($_POST['games']) && in_array('GTA V',     $games)) echo 'checked="echecked"; '?> >Grand Theft Auto V</li>
     </ul>
     <span><?php echo $games_err; ?></span>
-    
+        
 
     <label> Regions </label>
     <select name="regions">
@@ -305,7 +300,7 @@ $_POST['privacy'])) {
 
     <label> Privacy </label>
     <ul>
-    <li><input type="radio" name="privacy" value="yes" <?php if(isset($_POST['privacy']) && $_POST['privacy'] == "yes") echo 'checked = "checked"' ;?>> Yes </li>
+        <li><input type="radio" name="privacy" value="yes" <?php if(isset($_POST['privacy']) && $_POST['privacy'] == "yes") echo 'checked = "checked"' ;?>> Yes </li>
     </ul>
     <span><?php echo $privacy_err; ?></span>
 
@@ -315,8 +310,17 @@ $_POST['privacy'])) {
 
 
 
-</fieldset>
-</form>
+    </fieldset>
+    </form>
+
+    </div>
+</div>
+
+
+
+<!--  Footer -->
+<?php include '/home/dh_yehew8/win0908.me/it261/footer.php';?>
+
 
 </body>
 </html>
